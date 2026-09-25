@@ -9,10 +9,10 @@
         <relativePath/> 
     </parent>
     
-    <groupId>com.example</groupId>
-    <artifactId>Document-Analyzer</artifactId>
+    <groupId>com.documentanalyzer</groupId>
+    <artifactId>document-analyzer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Document-Analyzer</name>
+    <name>document-analyzer</name>
     <description>Local RAG Document Analyzer</description>
 
     <properties>
@@ -20,16 +20,6 @@
     </properties>
 
     
-    <repositories>
-        <repository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>https://repo.spring.io/milestone</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 
     
     <dependencyManagement>

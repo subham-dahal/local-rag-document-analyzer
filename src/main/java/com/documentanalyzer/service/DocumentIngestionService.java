@@ -1,4 +1,4 @@
-package com.example.Document.Anaylzer;
+package com.documentanalyzer.service;
 
 import org.springframework.ai.reader.tika.TikaDocumentReader;
 import org.springframework.ai.transformer.splitter.TokenTextSplitter;
@@ -12,12 +12,12 @@ import jakarta.annotation.PostConstruct;
 public class DocumentIngestionService {
 
     private final VectorStore vectorStore;
-    
-    @Value("classpath:docs/Document-Analyzer.pdf") 
-    private Resource pdfResource;
+    private final Resource pdfResource;
 
-    public DocumentIngestionService(VectorStore vectorStore) {
+    public DocumentIngestionService(VectorStore vectorStore,
+                                    @Value("${app.document.location:classpath:docs/Document-Analyzer.pdf}") Resource pdfResource) {
         this.vectorStore = vectorStore;
+        this.pdfResource = pdfResource;
     }
 
     @PostConstruct

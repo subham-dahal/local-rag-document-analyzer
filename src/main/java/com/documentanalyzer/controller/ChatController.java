@@ -1,4 +1,4 @@
-package com.example.Document.Anaylzer;
+package com.documentanalyzer.controller;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.QuestionAnswerAdvisor;

@@ -1,4 +1,4 @@
-package com.example.Document.Anaylzer;
+package com.documentanalyzer.config;
 
 import org.springframework.ai.embedding.EmbeddingModel;
 import org.springframework.ai.vectorstore.SimpleVectorStore;
